@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="bgimg"></div>
@@ -17,12 +18,40 @@
             <input type="button" value="Login" id="logb">
             <input type="button" value="  Sign Up" id="signb">
         </div>
-        <div class ="textgroup">
-            <input type="text" placeholder="User ID" id="inputfield">
-            <input type="text" placeholder="Password" id="inputfield">
-            <input type="button" value="Login" id="log">
+        <form>
+        <div class ="textgroup" id="flog">
+            <input type="text" placeholder="User ID" class="inputfield" required>
+            <input type="text" placeholder="Enter Password" class="inputfield" required >
+            <input type="submit" value="Login" id="log">
 
         </div>
+    </form>
+    <form action="">
+        <div class ="textgroup" id="register">
+            <input type="text" placeholder="User ID" class="inputfield" required>
+            <input type="text" placeholder="Set your Password" class="inputfield" required>
+            <input type="email" placeholder="Enter your Email" class="inputfield" required>
+            <input type="submit" value="Sign Up" id="log">
+
+        </div>
+    </form>
     </div>
+    </div>
+    <script>
+        let x =document.getElementById('logb')
+        let y = document.getElementById('signb')
+        let z=document.getElementById('high')
+        y.addEventListener('click',()=>{
+            z.style= "margin-left: 120px;";
+            document.getElementById('register').style="left: 50px;"
+            document.getElementById('flog').style="left:-350px"
+        })
+        x.addEventListener('click',()=>{
+            z.style= "margin-left: 0px;";
+            document.getElementById('register').style="left: 450px;"
+            document.getElementById('flog').style="left:50px"
+        })
+        
+    </script>
 </body>
 </html>
