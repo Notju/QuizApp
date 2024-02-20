@@ -1,0 +1,77 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#bgimg{
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/07/22/10/lake-2608425_1280.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+#main{
+    width: 100%;
+    max-width: 400px;
+    background-color:#ffffff;
+    border-radius: 15px;
+    padding:20px 30px 70px;
+    margin: 100px 30% 20px;
+    position: absolute;
+    height: 350px;
+    
+
+}
+#button{
+    margin-left: 15%;
+    border-radius: 15px;
+    box-shadow: rgba(240,156,132,255) 0px 3px 6px;
+    width: 70%;
+    text-align: center;
+    position: relative;
+
+}
+#logb,#signb{
+    background: transparent;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    padding: 10px 30px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#high{
+    position: absolute;
+    padding: 10px 30px;
+    top: 0px;
+    left: 0px;
+    background-color: #fe9148;
+    border-radius: 15px;
+    height: 100%;
+    width: 50%;
+    /* margin-left: 120px; */
+}
+.textgroup{
+    position: absolute;
+    top:30%;
+    width: 280px;
+}
+#inputfield{
+    width: 100%;
+    border: 0px;
+    outline: none;
+    padding: 10px 0px;
+    border-bottom:1px solid black ;
+    background: transparent;
+    margin: 10px 0px;
+}
+
