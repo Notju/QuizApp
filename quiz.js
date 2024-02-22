@@ -65,9 +65,9 @@ function display(){
     current.options.forEach((x)=>{
     const button = document.createElement('button');
     button.textContent = x;
-    button.onclick = () => checkAnswer(x);
-    button.classList.add('answer')
     answerdisplay.appendChild(button);
+    button.classList.add('answer')
+    button.onclick = () => checkAnswer(x);
     });
 
 }
